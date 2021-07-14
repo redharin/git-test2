@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="git-test2Flow" doc:id="94a336fa-926c-4015-84ac-8a3d342b9260" >
 		<http:listener doc:name="Listener" doc:id="1936e8a2-64a3-4412-9d73-cff2b7322a95" config-ref="HTTP_Listener_config" path="/test"/>
 		<logger level="INFO" doc:name="Logger" doc:id="4e793ed5-6397-4a9b-b56d-c45b8b114710" message="Request received for processing"/>
-		<set-payload value='#["Successfully executed the flow"]' doc:name="Set Payload" doc:id="815cce64-7bcd-405c-a5a1-06c3de074f2e" />
+		<set-payload value='#["Successfully executed the flow form runtime manager"]' doc:name="Set Payload" doc:id="815cce64-7bcd-405c-a5a1-06c3de074f2e" />
 		<logger level="INFO" doc:name="Logger" doc:id="dcd4a32e-51b7-4506-ab90-0c523836caab" />
 	</flow>
 </mule>
